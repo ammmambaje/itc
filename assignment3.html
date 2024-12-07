@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <title>Math Operations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="w3-container w3-center w3-padding-32"> 
+    <h1><b>Math Operations</b></h1>
+</header>
+
+<div class="w3-row-padding w3-padding-64" style="display: flex; justify-content: center; flex-wrap: wrap;">
+    <div class="w3-content" style="display: flex; justify-content: center; flex-wrap: wrap;">
+<div class="converter">
+        <h2>Math Operations on First N Natural Numbers</h2>
+        <h2>Factorial</h2>
+        <label for="factorialInput">Enter a number (N):</label>
+        <input type="number" id="factorialInput" min="0" placeholder="Enter a non-negative integer">
+        <button onclick="calculateFactorial()">Calculate Factorial</button>
+        <button onclick="clearFactorial()">Clear</button>
+        <div class="result-box" id="factorialResult"></div> 
+      </div>
+
+      <div class="converter">
+        <h2>Sum</h2>
+        <label for="sumInput">Enter a number (N):</label>
+        <input type="number" id="sumInput" min="0" placeholder="Enter a non-negative integer">
+        <button onclick="calculateSum()">Calculate Sum</button>
+        <button onclick="clearSum()">Clear</button> 
+        <div class="result-box" id="sumResult"></div> 
+      </div>
+
+      <div class="converter">
+        <h2>Average</h2>
+        <label for="averageInput">Enter a number (N):</label>
+        <input type="number" id="averageInput" min="0" placeholder="Enter a non-negative integer">
+        <button onclick="calculateAverage()">Calculate Average</button>
+        <button onclick="clearAverage()">Clear</button> 
+        <div class="result-box" id="averageResult"></div>
+      </div>
+      
+    </div>
+</div>
+
+<footer>
+    <a href="main.html" style="text-decoration: none; color: inherit;">
+    <h2>Back to Homepage</h2>
+</a></footer>
+    
+<script src="assignment3java.js"></script>
+
+</body>
+</html>

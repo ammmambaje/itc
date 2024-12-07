@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Unit Converter</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+
+<div id="navbar" class="w3-top" style="color: white;">
+    <div class="w3-bar w3-card w3-left-align w3-large">
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large" 
+           href="javascript:void(0);" 
+           onclick="myFunction()" 
+           title="Toggle Navigation Menu">
+           <i class="fa fa-bars"></i>
+        </a>
+        <a href="test.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large" style="color: white;">Home</a>
+        <a href="assignment1.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large" style="color: white;">Assignment 1</a>
+        <a href="assignment2.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large" style="color: white;">Assignment 2</a>
+        <a href="assignment3.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large" style="color: white;">Assignment 3</a>
+        <a href="assignment4.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large" style="color: white;">Assignment 4</a>
+    </div>
+</div>
+
+<header class="w3-container w3-center w3-padding-32" style="background-color: black";> 
+    <h1 style="color: white;"><b><br>Unit Converter</b></h1>
+</header>
+
+<div class="w3-row-padding w3-padding-64" style="display: flex; justify-content: center; flex-wrap: wrap;">
+    <div class="w3-content" style="display: flex; justify-content: center; flex-wrap: wrap;">
+        <div class="converter">
+            <h2>Celsius to Fahrenheit</h2>
+            <label for="celsius">Celsius:</label>
+            <input type="number" id="celsius" placeholder="Enter Celsius">
+            <button onclick="convertCtoF()">Convert</button>
+            <button onclick="clearCtoF()">Clear</button> 
+            <div class="result-box" id="resultCtoF"></div>
+        </div>
+
+        <div class="converter">
+            <h2>Fahrenheit to Celsius</h2>
+            <label for="fahrenheit">Fahrenheit:</label>
+            <input type="number" id="fahrenheit" placeholder="Enter Fahrenheit">
+            <button onclick="convertFtoC()">Convert</button>
+            <button onclick="clearFtoC()">Clear</button> 
+            <div class="result-box" id="resultFtoC"></div>
+        </div>
+
+        <div class="converter">
+            <h2>Meters to Feet</h2>
+            <label for="meters">Meters:</label>
+            <input type="number" id="meters" placeholder="Enter Meters">
+            <button onclick="convertMtoFt()">Convert</button>
+            <button onclick="clearMtoFt()">Clear</button> 
+            <div class="result-box" id="resultMtoFt"></div>
+        </div>
+
+        <div class="converter">
+            <h2>Feet to Meters</h2>
+            <label for="feet">Feet:</label>
+            <input type="number" id="feet" placeholder="Enter Feet">
+            <button onclick="convertFtToM()">Convert</button>
+            <button onclick="clearFtToM()">Clear</button> 
+            <div class="result-box" id="resultFtToM"></div>
+        </div>
+    </div>
+</div>
+
+<footer class="w3-container w3-padding-32 w3-margin-top w3-center" style="background-color: black">
+  <p></p>
+</footer>
+
+<script src="a1java.js"></script>
+<script src="navigationbar.js"></script>
+
+</body>
+</html>
